@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 8px 5px;
+}
+
+.navlinks a:hover {
+    color: grey;
+    border-bottom: 2px solid black;
+}
+
+.navbar button {
+    width: 130px;
+    height: 40px;
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navbar button:hover {
+    background-color: rgb(2, 2, 212);
+    box-shadow: 2px 4px 4px black;
+}
+
+.ash {
+    width: 100%;
+    text-align: center;
+    padding: 70px 20px 120px;
+    border-bottom: 1px solid rgb(161, 157, 157);
+}
+
+.ash h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+}
+
+.ash p {
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.auto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgb(161, 157, 157);
+}
+
+.ash2 {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid black;
+    transition: 0.3s ease;
+}
+
+.ash2:hover {
+    background-color: whitesmoke;
+}
+
+.ash2 h5 {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.ash2 p {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.work {
+    width: 100%;
+    margin-top: 100px;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(161, 157, 157);
+}
+
+.work h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .navlinks {
+        gap: 12px;
+    }
+
+    .navlinks a {
+        font-size: 1rem;
+    }
+
+    .navbar button {
+        width: 110px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .ash {
+        padding: 60px 20px 90px;
+    }
+
+    .ash p {
+        font-size: 1.1rem;
+    }
+
+    .auto {
+        padding: 60px 20px;
+    }
+
+    .work {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        min-height: 70px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navlinks {
+        gap: 10px;
+    }
+
+    .navlinks a {
+        font-size: 0.85rem;
+        padding: 5px 2px;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .ash {
+        padding: 50px 20px 70px;
+    }
+
+    .ash h1 {
+        font-size: 2rem;
+    }
+
+    .ash p {
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .auto {
+        padding: 40px 20px;
+    }
+
+    .ash2 {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .ash2 h5 {
+        font-size: 1.1rem;
+    }
+
+    .ash2 p {
+        font-size: 0.95rem;
+    }
+
+    .work {
+        margin-top: 50px;
+        padding: 40px 20px;
+    }
+
+    .work h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .navlinks {
+        gap: 7px;
+    }
+
+    .navlinks a {
+        font-size: 0.75rem;
+    }
+
+    .ash h1 {
+        font-size: 1.7rem;
+    }
+
+    .ash p {
+        font-size: 0.9rem;
+    }
+
+    .ash2 {
+        padding: 15px;
+    }
+}

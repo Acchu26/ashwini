@@ -1,0 +1,440 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar1 {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+}
+
+.pin h1 {
+    font-size: 2rem;
+}
+
+.pin1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.pin1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 8px 0;
+}
+
+.pin1 a:hover {
+    color: rgb(96, 92, 92);
+    border-bottom: 2px solid black;
+}
+
+
+/* =========================
+   HERO / TAP
+========================= */
+
+.tap {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.tap h1 {
+    width: auto;
+    height: auto;
+    padding: 0;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.tap p {
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.in {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 50px;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 60px;
+}
+
+.out {
+    padding: 0;
+    color: grey;
+    font-size: 14px;
+}
+
+.split {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.split h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.split p {
+    padding: 0;
+    margin-bottom: 30px;
+    color: rgb(68, 64, 64);
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CORE TENETS
+========================= */
+
+.name {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 50px;
+}
+
+.object {
+    padding: 0;
+    margin-bottom: 50px;
+    color: grey;
+    font-size: 14px;
+}
+
+.spoon,
+.spoon1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0;
+}
+
+.spoon1 {
+    padding-top: 60px;
+}
+
+.object1 h1,
+.object2 h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.object1 p,
+.object2 p {
+    padding: 0;
+    color: rgb(68, 64, 64);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.dad {
+    width: 100%;
+    margin-top: 60px;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+
+    background-color: rgb(204, 204, 204);
+}
+
+.chair {
+    margin: 0;
+    padding: 0;
+}
+
+.chair h1 {
+    font-size: 1.8rem;
+}
+
+.bench {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.bench a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.bench a:hover {
+    color: grey;
+}
+
+.bench2 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.bench2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.bench2 a:hover {
+    color: grey;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar1 {
+        padding: 20px 30px;
+    }
+
+    .pin h1 {
+        font-size: 1.5rem;
+    }
+
+    .pin1 {
+        gap: 25px;
+    }
+
+    .pin1 a {
+        font-size: 1rem;
+    }
+
+
+    /* Hero */
+
+    .tap {
+        grid-template-columns: 1fr;
+        padding: 70px 30px;
+        gap: 40px;
+    }
+
+    .tap h1 {
+        font-size: 2.5rem;
+    }
+
+    .tap p {
+        font-size: 1.1rem;
+    }
+
+
+    /* Philosophy */
+
+    .in {
+        grid-template-columns: 1fr;
+        padding: 60px 30px;
+        gap: 30px;
+    }
+
+    .out {
+        font-size: 13px;
+    }
+
+    .split h1 {
+        font-size: 1.8rem;
+    }
+
+    .split p {
+        font-size: 1.1rem;
+    }
+
+
+    /* Core Tenets */
+
+    .name {
+        padding: 60px 30px;
+    }
+
+    .spoon,
+    .spoon1 {
+        gap: 40px;
+    }
+
+
+    /* Footer */
+
+    .dad {
+        grid-template-columns: 1fr;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .bench {
+        flex-wrap: wrap;
+    }
+
+    .bench2 {
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    /* Navbar */
+
+    .navbar1 {
+        min-height: 70px;
+        padding: 15px 20px;
+    }
+
+    .pin h1 {
+        font-size: 1.2rem;
+    }
+
+    .pin1 {
+        gap: 15px;
+    }
+
+    .pin1 a {
+        font-size: 0.85rem;
+    }
+
+
+    /* Hero */
+
+    .tap {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .tap h1 {
+        font-size: 2rem;
+    }
+
+    .tap p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* Philosophy */
+
+    .in {
+        padding: 50px 20px;
+    }
+
+    .out {
+        font-size: 12px;
+    }
+
+    .split h1 {
+        font-size: 1.5rem;
+    }
+
+    .split p {
+        font-size: 1rem;
+    }
+
+
+    /* Core Tenets */
+
+    .name {
+        padding: 50px 20px;
+    }
+
+    .object {
+        margin-bottom: 35px;
+    }
+
+    .spoon,
+    .spoon1 {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .spoon1 {
+        padding-top: 35px;
+    }
+
+    .object1 h1,
+    .object2 h1 {
+        font-size: 1.3rem;
+    }
+
+    .object1 p,
+    .object2 p {
+        font-size: 1rem;
+    }
+
+
+    /* Footer */
+
+    .dad {
+        padding: 40px 20px;
+    }
+
+    .chair h1 {
+        font-size: 1.4rem;
+    }
+
+    .bench {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bench a {
+        font-size: 0.9rem;
+    }
+
+    .bench2 a {
+        font-size: 0.75rem;
+    }
+}
